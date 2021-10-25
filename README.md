@@ -1,1 +1,1 @@
-# prog2
+# Prog2 projekt
