@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQuery -->
+    <!-- jQuery UI -->
+    <script src="jquery-ui-1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.13.0/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.0/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.0/jquery-ui.theme.css">
+    <!-- Programmable Search Engine -->
+    <script async src="https://cse.google.com/cse.js?cx=ac06e702d98afb9d9"></script>
+    <title>WebLibrary</title>
+</head>
+<body>
+    <header>
+        <nav id="topnav">
+            <button id="toggle-side-navbar"></button>
+            <img src="images/logo.png" alt="Logo" id="top-logo">
+            <span id="search-box">
+                <img src="images/search.png" alt="Search" />
+                <!-- <div class="gcse-search"></div> -->
+            </span>
+            <span id="options">
+                <a href="pages/account.html"><img src="images/account.png" alt="" class="icon" /></a>
+                </a>
+            </span>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+    <main>
+        <!-- <section id="side-navbar">
+            <h1>Home</h1>
+            <hr style="margin-inline: 1em;"/>
+            <h1>Genres</h1>
+            <hr style="margin-inline: 1em;"/>
+            <ul id="category-list">
+                <li class="category">
+                    <img src="images/categories/fantasy.png" alt="" class="icon" />
+                    <span class="cat-txt">Fantasy</span>
+                </li>
+                <li class="category">
+                    <img src="images/categories/science-fiction.png" alt="" class="icon" />
+                    <span class="cat-txt">Sciene Fiction</span>
+                </li>
+                <li class="category">
+                    <img src="images/categories/history.png" alt="" class="icon" />
+                    <span class="cat-txt">History</span>
+                </li>
+            </ul>
+        </section> -->
+
+        <section id="sidenav">
+            <h1>Genres</h1>
+            <div id="sidenav-genres">
+                <ul>
+                    <li data-genre="all" class="btn">All</li>
+                    <li data-genre="fantasy" class="btn">Fantasy</li>
+                    <li data-genre="science-fiction" class="btn">Science Fiction</li>
+                    <li data-genre="cyberpunk" class="btn">Cyberpunk</li>
+                </ul>
+            </div>
+            <h1>Favourites</h1>
+            <div id="sidenav-favourites">
+                <ul>
+    
+                </ul>
+            </div>
+            <h1>Series</h1>
+            <div id="sidenav-series">
+                <ul>
+    
+                </ul>
+            </div>
+        </section>
+
+
+
+        <div id="main-tabs" style="width: 100%;">
+            <ul>
+                <li><a href="#tabs-home">Home</a></li>
+                <li><a href="#tabs-recent">Recent</a></li>
+                <li><a href="#tabs-continue">Continue</a></li>
+            </ul>
+            <div id="tabs-home">
+                <div id="home-books">
+                    <ul id="book-options">
+                        <li data-option="open">Open</li>
+                        <li data-option="mark-fav">Mark as favourite</li>
+                        <li data-option="mark-read">Mark as read</li>
+                        <li data-option="add-cat">Add to category</li>
+                    </ul>
+                    <span class="book science-fiction">
+                        <img src="images/ps.jpg" class="cover" />
+                        <p class="title">Perfect Shadow</p>
+                        <p class="year">2011</p>
+                    </span>
+                    <span class="book fantasy">
+                        <img src="images/wos.jpg" class="cover" />
+                        <p class="title">The Way of Shadows</p>
+                        <p class="year">2006</p>
+                    </span>
+                    <span class="book cyberpunk">
+                        <img src="images/se.jpg" class="cover" />
+                        <p class="title">Shadow's Edge</p>
+                        <p class="year">2007</p>
+                    </span>
+                    <span class="book cyberpunk">
+                        <img src="images/bts.jpg" class="cover" />
+                        <p class="title">Beyond the Shadows</p>
+                        <p class="year">2008</p>
+                    </span>
+                    <span class="book fantasy science-fiction">
+                        <img src="images/se.jpg" class="cover" />
+                        <p class="title">Shadow's Edge</p>
+                        <p class="year">2007</p>
+                    </span>
+                    <span class="book fantasy science-fiction cyberpunk">
+                        <img src="images/wos.jpg" class="cover" />
+                        <p class="title">The Way of Shadows</p>
+                        <p class="year">2006</p>
+                    </span>
+                    <span class="book fantasy">
+                        <img src="images/se.jpg" class="cover" />
+                        <p class="title">Shadow's Edge</p>
+                        <p class="year">2007</p>
+                    </span>
+                    <span class="book dark-fantasy">
+                        <img src="images/wos.jpg" class="cover" />
+                        <p class="title">The Way of Shadows</p>
+                        <p class="year">2006</p>
+                    </span>
+                </div>
+            </div>
+            <div id="tabs-recent">
+                <!-- <h1>Recent</h1> -->
+            </div>
+            <div id="tabs-continue">
+                <!-- <h1>Continue</h1> -->
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- <section id="main-content">
+            <div class="row-head">
+                <h1 class="row-title">Home</h1><h2 class="horizontal-separator"></h2>
+            </div>
+            <div class="row">
+                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>
+                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>
+                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>
+            </div>
+            <div class="row-head">
+                <h1 class="row-title">Recent</h1><h2 class="horizontal-separator"></h2>
+            </div>
+            <div class="row" id="recent">
+                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>
+            </div>
+            <div class="row-head">
+                <h1 class="row-title">Continue Reading</h1><h2 class="horizontal-separator"></h2>
+            </div>
+            <div class="row" id="contine-reading">
+                <span class="book">
+                    <img src="images/bts.jpg" class="cover" />
+                    <p class="title">Beyond the Shadows</p>
+                    <p class="year">2008</p>
+                </span>
+                <span class="book">
+                    <img src="images/se.jpg" class="cover" />
+                    <p class="title">Shadow's Edge</p>
+                    <p class="year">2007</p>
+                </span>
+                <span class="book">
+                    <img src="images/wos.jpg" class="cover" />
+                    <p class="title">The Way of Shadows</p>
+                    <p class="year">2006</p>
+                </span>
+            </div>
+            <div id="current-book-display">
+            </div>
+        </section> -->
+    </main>
+    
+    <div id="filtered-content">
+
+    </div>
+    <!-- Dynamically created content with JS, displays the selected book's details,
+         cover, and description, overlaying main content -->
+
+
+
+
+
+
+
+
+
+
+    
+    <footer>
+        <nav id="bottom-navbar">
+            <span id="on-site">
+                <img src="images/account.png" alt="Account"><a href="pages/account.html">Account</a>
+                <img src="images/settings.png" alt="Settings"><a href="pages/credits.html">Credits</a>
+            </span>
+            <span id="off-site">
+                <a href="https://cloud.google.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" /></a>
+            </span>
+            <span id="creator">
+                <a href="pages/creator.html">Levente Hadházi - 2021</a>
+            </span>
+        </nav>
+        <script src="js/index.js"></script>
+    </footer>
+</body>
+</html>

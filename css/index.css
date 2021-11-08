@@ -1,0 +1,284 @@
+:root {
+    --lighterBlue: rgb(26, 26, 75);
+    --grayBlue: rgb(55, 55, 75);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    font-size: 0.75em;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    background-color: var(--grayBlue);
+    color: white;
+}
+
+header {
+    flex: 25%;
+}
+
+#topnav {
+    display: flex;
+    padding: 0.5em;
+    margin: 0.5em;
+    background: var(--lighterBlue);
+}
+
+#toggle-side-navbar {
+    flex: 5%;
+    padding: 0.5em;
+    background-color: brown;
+    min-width: 3em;
+    max-width: 3em;
+}
+
+#top-logo {
+    min-width: 10em;
+    max-width: 20em;
+    flex: 10%;
+    padding: 0.5em;
+}
+
+#search-box {
+    flex: 25%;
+    padding: 0.5em;
+    background-color: green;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#search-box > img {
+    flex: 10%;
+    max-width: 3em;
+}
+
+#search-box > #search-field {
+    flex: 90%;
+}
+
+#search-box > #gcse-search {
+    flex: 90%;
+    height: 0.5em !important;
+}
+
+#options {
+    flex: 60%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#options > a > img {
+    margin-inline: 1em;
+    width: 3em;
+}
+
+#category-list {
+    padding: 0.5em;
+    margin: 0;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    margin-block: 1em;
+}
+
+.category > .icon {
+    flex: 5%;
+    padding-inline: 0.25em;
+}
+
+.category > .cat-txt {
+    flex: 95%;
+    padding-inline: 0.25em;
+}
+
+/* ################################################## */
+/* ################################################## */
+
+.btn.active {
+    font-weight: bold;
+    color: green;
+}
+
+main {
+    flex: 60%;
+    display: flex;
+}
+
+#sidenav {
+    flex: 20%;
+    margin: 0.5em;
+    min-height: 50em;
+}
+
+#sidenav-genres > ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidenav-genres > ul > li {
+    font-size: 1.5em;
+    cursor: pointer;
+    padding-block: 0.5em;
+}
+
+/* ################################################## */
+
+#main-tabs {
+    flex: 80%;
+    margin: 0.5em;
+    min-height: 72em;
+}
+
+#main-tabs .ui-tabs-tab a {
+    width: 10em;
+    font-size: 1.5em;
+}
+
+#home-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+    row-gap: 1em;
+}
+
+#book-options {
+    display: none;
+    z-index: 1000;
+    /* position: absolute; */
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    font-family: sans-serif;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+}
+
+.book-options li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.book-options li:hover {
+    background-color: #DEF;
+}
+
+
+
+#side-navbar {
+    flex: 15%;
+    background-color: var(--lighterBlue);
+    margin: 0.5em;
+    /* border-radius: 0.5em; */
+    font-size: 1.5em;
+    max-width: 15em;
+    display: none;
+}
+
+#side-navbar > h1 {
+    margin: 1em 0.5em;
+}
+
+#side-navbar .icon {
+    max-width: 3em;
+}
+
+#main-content {
+    flex: 85%;
+    margin-bottom: 2em;
+    /* background-image: url(../images/background-library.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+/* #main-content-background {
+    position: absolute;
+        top: 0;
+        left: 0;
+    opacity: 0.5;
+    
+} */
+
+#main-content > h1 {
+    margin: 1em;
+    font-size: 2em;
+}
+
+footer {
+    flex: 15%;
+}
+
+#bottom-navbar {
+    padding-block: 1.5em;
+    background: var(--lighterBlue);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#bottom-navbar a {
+    color: white;
+}
+
+#on-site {
+    flex: 75%;
+    padding-inline: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#on-site a {
+    margin: 1em 2em 1em 0em;
+    width: 6em;
+}
+
+#on-site img {
+    max-width: 2em;
+}
+
+#off-site {
+    flex: 25%;
+    padding-inline: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#off-site img {
+    width: 3em;
+}
+
+#creator {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-inline: 35em;
+    border-bottom: 1px solid white;
+    line-height:0.1em;
+}
+
+#creator > a {
+    padding-inline: 0.5em;
+    background: var(--lighterBlue);
+}
+
+.horizontal-separator {
+    flex: 85%;
+    border-bottom: 1px solid white;
+    margin: 1.5em 0.5em;
+}

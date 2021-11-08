@@ -1,0 +1,79 @@
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background:rgb(55, 55, 75);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+    border-radius: 5px;
+}
+
+.row-head {
+    display: flex;
+    margin-top: 3em;
+}
+
+.row-title {
+    flex: 15%;
+    font-size: 1.5em;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13em, 1fr));
+    /* gap: 0em; */
+    row-gap: 0em;
+    column-gap: 0em;
+}
+
+
+.book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.book > .cover {
+    width: 12em;
+    height: 18em;
+    border: 1px solid black;
+}
+
+.book > .title {
+    width: 12em;
+    margin: 0.5em 0em 0em 0em;
+}
+
+.book > .title:hover {
+    text-decoration: underline;
+}
+
+.book > .year {
+    width: 12em;
+    margin: 0.25em 0em 0em 0em;
+    color: gray;
+}
+
+/* .book-cover:hover + .img-desc{
+    position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    visibility: hidden;
+} */
